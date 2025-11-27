@@ -3,10 +3,12 @@ import random
 
 
 def janken():
+    print("==============================================")
     print("Benvingut/da al joc de Pedra, Paper o Tisores!")
+    print("==============================================")
     print("Introdueix fins quantes rondes vols jugar:")
-    print("Si vols jugar fins que un jugador arribi a 3 punts, prem 1")
-    print("Si vols jugar fins 5 rondes, prem 2")
+    print("1. Si vols jugar fins que un jugador arribi a 3 punts.")
+    print("2. Si vols jugar fins 5 rondes.")
     opcio = input("Tria una opció: ").strip()
 
     if opcio == "1":
