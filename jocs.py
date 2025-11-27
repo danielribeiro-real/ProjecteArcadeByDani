@@ -15,8 +15,8 @@ def janken():
         rondes_a_guanyar = 3
         max_rondes = None
     elif opcio == "2":
-        rondes_a_guanyar = None
-        max_rondes = 5
+        rondes_a_guanyar = 5
+        max_rondes = None
     else:
         print("Opció no vàlida. Si us plau, intenta-ho de nou.")
         return
@@ -64,3 +64,28 @@ def janken():
         print("La màquina ha guanyat la partida!")
     else:
         print("La partida ha acabat en empat.")
+
+def nana():
+    print("==============================================")
+    print("Benvingut/da al joc d'Endevina el Número!")
+    print("==============================================")
+    numero_secret = random.randint(1, 100)
+    intents = 0
+
+    while True:
+        try:
+            endevina = int(input("Introdueix un número entre 1 i 100 (o 0 per sortir): "))
+            if endevina == 0:
+                print(f"Has decidit sortir. El número secret era {numero_secret}.")
+                break
+            intents += 1
+
+            if endevina < numero_secret:
+                print("Massa baix! Prova un número més alt.")
+            elif endevina > numero_secret:
+                print("Massa alt! Prova un número més baix.")
+            else:
+                print(f"Felicitats! Has endevinat el número {numero_secret} en {intents} intents.")
+                break
+        except ValueError:
+            print("Si us plau, introdueix un número vàlid.")
