@@ -7,6 +7,7 @@ while True:
     print("================================")
     print("1. Pedra, Paper o Tisora")
     print("2. Endevina el Número")
+    print("3. Tres en Ratlla")
     print("S. Sortir")
     print("================================")
 
@@ -16,6 +17,8 @@ while True:
         jocs.janken()
     elif opcio == "2":
         jocs.nana()
+    elif opcio == "3":
+        jocs.tresenraya()
     elif opcio == "S":
         print("Gràcies per jugar! Fins aviat!")
         break

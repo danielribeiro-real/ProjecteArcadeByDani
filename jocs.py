@@ -59,7 +59,7 @@ def janken():
 
     # Resultat final
     if punts_jugador > punts_maquina:
-        print("Has guanyat la partida! 🎉")
+        print("Has guanyat la partida! Felicitats!")
     elif punts_maquina > punts_jugador:
         print("La màquina ha guanyat la partida!")
     else:
